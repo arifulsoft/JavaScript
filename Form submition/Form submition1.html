@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="text-align: center;">
+
+  <div style="background: rgb(230, 230, 220); padding: 30px;">
+  <h1 style="color: rgb(5, 5, 17);">Students Form</h1>
+</div>
+
+<div style="background: seashell;">
+   
+    
+    <fieldset style="width: 100px; background: gold;">
+      <legend>Input type</legend>
+      <input type="text" name="" id="input">
+    </fieldset><p></p>
+  </div>
+
+      <fieldset style="width: 172px; background: greenyellow;">
+        <legend>Round</legend>
+        <select name="dropdoun" id="drop" style="width: 100px;">
+          <option>55</option>
+          <option>56</option>
+          <option>57</option>
+          <option>58</option>
+        </select>
+      </fieldset><p></p>
+
+      <fieldset style="width: 172px;background: rgb(234, 255, 0);">
+        <legend>Gender</legend>
+        <input type="radio" name="gender" id="gender1" value="male">Male  <br>
+        <input type="radio" name="gender" id="gender2" value="Femle">Femle  <br>
+        <input type="radio" name="gender" id="gender3" value="Others">Others  <br>
+      </fieldset><p></p>
+
+      <fieldset style="width: 175px; background:hotpink;">
+        <legend>Subject</legend>
+        <input type="checkbox" name="a" id="check1" value="JEE">JEE <br>
+        <input type="checkbox" name="t" id="check2" value="PHP">PHP <br>
+        <input type="checkbox" name="o" id="check3" value="C++">C++ <br>
+      </fieldset><p></p>
+
+            <button onclick="m1()" style="background-color: chartreuse;">Show</button><p></p>
+            <button onclick="m2()" style="background-color: red;">Close</button><p></p>
+   </div>
+            <script>
+
+                  var w="";
+              var inp=document.getElementById("input");
+              var drp=document.getElementById("drop");
+              var q1=document.getElementById("gender1");
+              var q2=document.getElementById("gender2");
+              var q3=document.getElementById("gender3");
+
+              var h1=document.getElementById("check1");
+              var h2=document.getElementById("check2");
+              var h3=document.getElementById("check3");
+
+          
+              
+              function m1(){
+
+
+                var f="";
+                if(q1.checked){
+                  f=q1.value;
+                }else if(q2.checked){
+                  f=q2.value;
+                }else if(q3.checked){
+                  f=q3.value;
+                }
+                
+                // checked section
+                var b="";
+                if(h1.checked){
+                  b+=h1.value+"\n";
+                }
+                 if(h2.checked){
+                  b+=h2.value +"\n";
+                }
+                 if(h3.checked){
+                  b+=h3.value +"\n";
+                }
+                
+                
+                var x=inp.value;
+                var y=drp.value;
+                    w=window.open("","");
+                    w.document.write(" <textarea cols='30' rows='10'>");
+                    w.document.write("Name: "+x+"\n"+"Round: "+y+"\n"+"Gender:" +f+"\n"+"Subject: "+b)
+                    w.document.write(" </textarea>")
+                   
+              }
+              function m2(){
+                w.close();
+              }
+            </script>
+</body>
+</html>

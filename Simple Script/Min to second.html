@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <span>result</span> <input type="text" name="" id="result">
+  <p></p>
+  <span>input</span> <input type="text" name="" id="input">
+  <p></p>
+  <button onclick="ok()">ok</button>
+  <p></p>
+  <script>
+    var res = document.getElementById("result");
+    var inp1 = document.getElementById("input");
+    function ok() {
+      var inp = parseInt(inp1.value);
+      res.value = inp *60*60;
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+   
+    var temp=0;
+    
+      var a=[6,25,40];
+      for(var j=0; j<a.length; j++){
+          for(var i=0; i<a.length-1; i++){
+            if (a[i]>a[i+1]){
+              temp=a[i];
+              a[i]=a[i+1];
+              a[i+1]=temp;
+            }
+          }
+      }
+      document.write(a);
+      document.write("</br>");
+    
+  </script>
+  
+</body>
+</html>

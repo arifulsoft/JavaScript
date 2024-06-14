@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <input type="text" name="" id="input">
+  <button onclick="ok()">ok</button>
+  <script>
+    var inp=document.getElementById("input");
+
+    function ok(){
+      var w=parseInt(inp.value);
+      var p=1;
+      if(w<1){
+        alert(p);
+      }else{
+       for(var i=2; i<=w;i++) {
+        p=p*i;    
+       }
+       alert(p);
+      }
+     
+    }
+  </script>
+</body>
+</html>

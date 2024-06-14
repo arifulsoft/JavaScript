@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="m()">Calculation</button><p></p>
+    <textarea id="a1" rows="5" cols="30" placeholder="Show result"></textarea>
+
+    <script>
+        var h= document.getElementById("a1");
+        function m(){
+            var dd=m1();
+            h.value=dd;
+        }
+        function m1(){
+            var a= parseInt(prompt("enter number"));
+            var b= parseInt(prompt("enter number"));
+            var s1=a+b;
+            var s2=a-b;
+            var s3=a*b;
+            var s4=a/b;
+            var cal="Summation is ="+s1+"\nSubtraction is ="+s2+"\nMultiplication is ="+s3+"\nDivision is ="+s4;
+            return cal;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span>email chack</span> <input type="text" name="" id="email"><p></p>
+  <button onclick="ok()">ok</button>
+  <script>
+    var p=/^[a-z0-9]+\@[a-z]+\.[a-z]{2,3}$/; 
+    var x=document.getElementById("email");
+    function ok(){
+      var q=x.value;
+      if(q.match(p)){
+        alert("right");
+      }else{
+        alert("rong");
+      }
+     
+    
+    }
+  </script>
+
+  <script>
+
+  </script>
+  
+</body>
+</html>

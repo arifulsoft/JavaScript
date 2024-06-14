@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+          <span>input number</span><input type="text" name="" id="input"><p></p>
+          <span>Result</span><input type="text" name="" id="result"><p></p>
+          <button onclick="ok()">ok</button>
+          <script>
+            var inp1=document.getElementById("input");
+            var Result=document.getElementById("result");
+            function ok(){
+               var inp=parseInt(inp1.value);
+               if(inp>100 || inp<0){
+                Result.value="invalit";
+               }else if (inp>=80){
+                Result.value="A+";
+               }else if (inp>=70){
+                Result.value="A";
+               }else if (inp>=60){
+                Result.value="A-";
+               }else if (inp>=50){
+                Result.value="B";
+               }else if (inp>=40){
+                Result.value="C";
+               }else if (inp>=33){
+                Result.value="D";
+               }
+               else{
+                Result.value="Fail";
+               }
+            }
+          </script>
+</body>
+</html>

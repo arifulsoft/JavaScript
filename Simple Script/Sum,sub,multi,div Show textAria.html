@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span style="color: rgb(146, 127, 255);">input number 1</span> <input type="text" id="input1"><p></p>
+  <span>input number 2</span> <input type="text" id="input2"><p></p>
+  <span>Textarea result</span> <textarea name="" id="area" cols="30" rows="10"></textarea><p></p>
+  <button onclick="ok()" style="background-color: cornsilk; color: black;">Calculetion</button>
+
+  <script>
+  var  inp1=document.getElementById("input1");
+  var  inp2=document.getElementById("input2");
+  var  area=document.getElementById("area");
+
+          function ok(){
+            var x=add();
+            var y=sub();
+            var z= malti();
+            var r= Divition();
+            area.value="sumession-"+x+"\nsub-"+y+"\nmalti-"+z+"\ndivition-"+r;
+
+          }
+
+          function add(){
+            var in1=parseInt(inp1.value);
+            var in2=parseInt(inp2.value);
+            var i=in1+in2;
+            return i;
+          }
+
+          function sub(){
+            var in1=parseInt(inp1.value);
+            var in2=parseInt(inp2.value);
+            var i=in1-in2;
+            return i;
+          }
+
+          function malti(){
+            var in1=parseInt(inp1.value);
+            var in2=parseInt(inp2.value);
+            var i=in1*in2;
+            return i;
+          }
+
+          function Divition(){
+            var in1=parseInt(inp1.value);
+            var in2=parseInt(inp2.value);
+            var i=in1/in2;
+            return i;
+          }
+
+          
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+      <span>input number</span><input type="text" name="" id="input"><p></p>
+      <button onclick="ok()">ok</button>
+      <script>
+        var inp1=document.getElementById("input");
+            function ok(){
+               var x=parseInt(inp1.value);
+               count=0;
+               for (var i=0; i<=x; i++){
+
+                if(x%i==0){
+                  count++;
+                }
+
+               }
+               if (count==2){
+                alert("prime");
+               }else{
+                alert("Not prime");
+               }
+              
+               
+            }
+      </script>
+</body>
+</html>

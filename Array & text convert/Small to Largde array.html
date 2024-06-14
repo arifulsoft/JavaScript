@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var x=[
+        [65,0,12,3,4,8,19,13,45],[0,17,15,24,28,2,6],[5,4,89,12,37,26]
+      ];
+      var temp=0;
+      for(var k=0; k<x.length; k++){
+        var a=x[k];
+
+        for(var j=0; j<a.length; j++){
+            for(var i=0; i<a.length; i++){
+            if(a[i]>a[i+1]){
+                temp=a[i];
+                a[i]=a[i+1];
+                a[i+1]=temp;
+            }
+        }
+        }
+        document.write(a+"<br>");
+      }
+    </script>
+</body>
+</html>

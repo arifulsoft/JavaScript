@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+   <span>result</span> <input type="text" name="" id="result"> <p></p>
+ 
+  <span>input1</span> <input type="text" name="" id="input1"> <p></p>
+  <span>input2</span> <input type="text" name="" id="input2"> <p></p>
+  <span>input3</span> <input type="text" name="" id="input3"> <p></p>
+  <span>input4</span> <input type="text" name="" id="input4"> <p></p>
+  <span>input5</span> <input type="text" name="" id="input5"> <p></p>
+  <span>input6</span> <input type="text" name="" id="input6"> <p></p>
+  <button onclick="total()">total</button><p></p>
+  <button onclick="avrg()">avrg</button><p></p>
+  <script>
+    var res=document.getElementById("result");
+
+    var inp1=document.getElementById("input1");
+    var inp2=document.getElementById("input2");
+    var inp3=document.getElementById("input3");
+    var inp4=document.getElementById("input4");
+    var inp5=document.getElementById("input5");
+    var inp6=document.getElementById("input6");
+
+    function total(){
+      var i1=parseInt(inp1.value);
+      var i2=parseInt(inp2.value);
+      var i3=parseInt(inp3.value);
+      var i4=parseInt(inp4.value);
+      var i5=parseInt(inp5.value);
+      var i6=parseInt(inp6.value);
+
+      res.value=i1+i2+i3+i4+i5+i6;
+    }
+
+    function avrg(){
+      var i1=parseInt(inp1.value);
+      var i2=parseInt(inp2.value);
+      var i3=parseInt(inp3.value);
+      var i4=parseInt(inp4.value);
+      var i5=parseInt(inp5.value);
+      var i6=parseInt(inp6.value);
+
+      res.value=(i1+i2+i3+i4+i5+i6)/6;
+    }
+
+
+  </script>
+ 
+
+
+</body>
+</html>

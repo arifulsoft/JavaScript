@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <span>result</span> <input type="text" name="" id="result">
+  <p></p>
+  <span>input1</span> <input type="text" name="" id="input1">
+  <p></p>
+  <span>input2</span> <input type="text" name="" id="input2">
+  <p></p>
+  <button onclick="add()">add</button>
+  <p></p>
+  <button onclick="sub()">sub</button>
+  <p></p>
+  <button onclick="malti()">malti</button>
+  <p></p>
+  <button onclick="divesion()">divesion</button>
+  <p></p>
+  <script>
+
+    var res = document.getElementById("result");
+    var inp1 = document.getElementById("input1");
+    var inp2 = document.getElementById("input2");
+
+    function add() {
+      var i1 = parseInt(inp1.value);
+      var i2 = parseInt(inp2.value);
+      res.value = i1 + i2;
+    }
+    function sub() {
+      var i1 = parseInt(inp1.value);
+      var i2 = parseInt(inp2.value);
+      res.value = i1 - i2;
+    }
+
+    function malti() {
+      var i1 = parseInt(inp1.value);
+      var i2 = parseInt(inp2.value);
+      res.value = i1 * i2;
+    }
+
+    function divesion() {
+      var i1 = parseInt(inp1.value);
+      var i2 = parseInt(inp2.value);
+      res.value = i1 / i2;
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+          <span>product 1</span><input type="text" name="" id="product1"><p></p>
+          <span>product 2</span><input type="text" name="" id="product2"><p></p>
+          <span>product 3</span><input type="text" name="" id="product3"><p></p>
+          <button onclick="ok()">ok</button><p></p>
+          <span>total</span><input type="text" name="" id="total"><p></p>
+          <span>Discount</span><input type="text" name="" id="discount"><p></p>
+          <span>Net many</span><input type="text" name="" id="net"><p></p>
+          <script>
+
+                var prod1=document.getElementById("product1");
+                var prod2=document.getElementById("product2");
+                var prod3=document.getElementById("product3");
+
+                var tol=document.getElementById("total");
+                var dis=document.getElementById("discount");
+                var nett=document.getElementById("net");
+
+                function ok(){
+                  var pro1=parseInt(prod1.value);
+                  var pro2=parseInt(prod2.value);
+                  var pro3=parseInt(prod3.value);
+                 
+                  tol.value=pro1+pro2+pro3;
+                 total=tol.value;
+                 dicc=0;
+                 if(total>=5000){
+                  dicc=15;
+                  dis.value=total*dicc/100;
+                  nett.value=total-dis.value;
+                 }else if(total>=2000){
+                  dicc=10;
+                  dis.value=total*dicc/100;
+                  nett.value=total-dis.value;
+                 }else  if(total>=1000){
+                  dicc=5;
+                  dis.value=total*dicc/100;
+                  nett.value=total-dis.value;
+                 }
+                  
+                }
+
+
+          </script>
+</body>
+</html>
